@@ -9,54 +9,52 @@ export default function Home() {
         <NavBar />
 
         <div className="hero">
-          {/* todo fix the top and left thing */}
-          {/* <div
-            style={{ position: "relative", top: -16, left: -16, zIndex: 1000 }}
-          > */}
+          <h1>
             <h1>
               INTER-
               <br />
               DISCIPLINARY <br />
               FRONT-END
             </h1>
+
+            <div id="shift1">
+              <h1>
+                INTER-
+                <br />
+                DISCIPLINARY <br />
+                FRONT-END
+              </h1>
+            </div>
+            <div id="shift2">
+              <h1>
+                INTER-
+                <br />
+                DISCIPLINARY <br />
+                FRONT-END
+              </h1>
+            </div>
+            <div id="shift3">
+              <h1>
+                INTER-
+                <br />
+                DISCIPLINARY <br />
+                FRONT-END
+              </h1>
+            </div>
+            <div id="shift4">
+              <h1>
+                INTER-
+                <br />
+                DISCIPLINARY <br />
+                FRONT-END
+              </h1>
+            </div>
+          </h1>
           {/* </div> */}
-          <div id="shift1">
-            <h1>
-              INTER-
-              <br />
-              DISCIPLINARY <br />
-              FRONT-END
-            </h1>
-          </div>
-          <div id="shift2">
-            <h1>
-              INTER-
-              <br />
-              DISCIPLINARY <br />
-              FRONT-END
-            </h1>
-          </div>
-          <div id="shift3">
-            <h1>
-              INTER-
-              <br />
-              DISCIPLINARY <br />
-              FRONT-END
-            </h1>
-          </div>
-          <div id="shift4">
-            <h1>
-              INTER-
-              <br />
-              DISCIPLINARY <br />
-              FRONT-END
-            </h1>
-          </div>
         </div>
 
         {/* end of hero */}
         <div className="sub">
-
           <div className="subLottie">
             <Lottie
               options={{
@@ -68,7 +66,6 @@ export default function Home() {
             />
           </div>
 
-          
           <div>
             <p>
               I am a freelance web designer and full-stack developer based in
