@@ -1,4 +1,6 @@
+import Lottie from "react-lottie";
 import NavBar from "../components/NavBar";
+import * as animationData from "../public/lottie/placeholder.json";
 
 export default function Home() {
   return (
@@ -8,16 +10,16 @@ export default function Home() {
 
         <div className="hero">
           {/* todo fix the top and left thing */}
-          <div
+          {/* <div
             style={{ position: "relative", top: -16, left: -16, zIndex: 1000 }}
-          >
+          > */}
             <h1>
               INTER-
               <br />
               DISCIPLINARY <br />
               FRONT-END
             </h1>
-          </div>
+          {/* </div> */}
           <div id="shift1">
             <h1>
               INTER-
@@ -27,7 +29,7 @@ export default function Home() {
             </h1>
           </div>
           <div id="shift2">
-            <h1 >
+            <h1>
               INTER-
               <br />
               DISCIPLINARY <br />
@@ -54,18 +56,30 @@ export default function Home() {
 
         {/* end of hero */}
         <div className="sub">
+
+          <div className="subLottie">
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: animationData.default,
+                rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
+              }}
+            />
+          </div>
+
+          
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              vitae auctor orci. Quisque condimentum quam ligula, eget
-              consectetur metus cursus vel. Vestibulum cursus rhoncus
-              consectetur. Integer eget porta nunc. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae; In ac
-              neque sit amet enim ullamcorper porttitor ut eu magna. Nulla
-              facilisi. Sed mauris lectus, congue vitae fermentum nec,
-              vestibulum in ligula. Morbi et lorem finibus nibh tristique
-              aliquet. Maecenas eu gravida enim, ac ultricies nisl. Curabitur
-              gravida consequat lacinia.
+              I am a freelance web designer and full-stack developer based in
+              Barrie, Ontario. I borrow inspiration from other media, including
+              photography, typography, and cinema, to create
+              aesthecially-pleasing and practical websites and webapps.
+            </p>
+
+            <p>
+              I can help you build a custom and stunning website or webapp from
+              scratch with React.js or Next.js.
             </p>
           </div>
         </div>
