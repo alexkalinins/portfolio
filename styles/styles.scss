@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Black.ttf");
+  font-style: black;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Regular.ttf");
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/fonts/MonumentExtended/MonumentExtended-Light.ttf");
+  font-style: light;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("/fonts/AkzidenzGrotesk/Akzidenz-grotesk-roman.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html {
+  background-color: black;
+}
+
+// h1 {
+//   color: white;
+//   font-family: "MonumentExtended";
+//   font-style: black;
+//   font-size: inherit;
+// }
+
+h1 {
+  color: white;
+  font-family: "MonumentExtended";
+  font-style: black;
+  font-size: inherit;
+}
+
+.outlinedText {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+body {
+  color: white;
+}
+
+p {
+  font-family: "AkzidenzGrotesk";
+  font-style: normal;
+  font-size: 14pt;
+}
+
+.hero {
+  padding: 1rem;
+  font-size: 7vw;
+  position: relative;
+}
+
+span {
+  font-family: "MonumentExtended";
+  font-style: light;
+  text-align: inherit;
+
+  background-color: transparent;
+}
+
+.shiftingText {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#shift1 {
+  @extend .shiftingText;
+
+  -webkit-animation: title1 3s ease-in-out alternate infinite;
+  animation: title1 3s ease-in-out alternate infinite;
+
+  z-index: 100;
+
+  h1 {
+    @extend .outlinedText;
+  }
+}
+
+#shift2 {
+  @extend .shiftingText;
+  -webkit-animation: title2 3s ease-in-out alternate infinite;
+  animation: title2 3s ease-in-out alternate infinite;
+  z-index: 80;
+
+  h1 {
+    @extend .outlinedText;
+    -webkit-text-stroke-color: red;
+  }
+}
+
+#shift3 {
+  @extend .shiftingText;
+  -webkit-animation: title3 3s ease-in-out alternate infinite;
+  animation: title3 3s ease-in-out alternate infinite;
+  z-index: 70;
+
+  h1 {
+    @extend .outlinedText;
+    -webkit-text-stroke-color: green;
+  }
+}
+
+#shift4 {
+  @extend .shiftingText;
+  -webkit-animation: title4 3s ease-in-out alternate infinite;
+  animation: title4 3s ease-in-out alternate infinite;
+  z-index: 60;
+
+  h1 {
+    @extend .outlinedText;
+    -webkit-text-stroke-color: blue;
+  }
+}
+
+@-webkit-keyframes title4 {
+  from {
+    -webkit-transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(20px) translateX(20px);
+  }
+}
+
+@keyframes title4 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+
+@-webkit-keyframes title3 {
+  from {
+    -webkit-transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(15px) translateX(15px);
+  }
+}
+
+@keyframes title3 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px) translateX(15px);
+  }
+}
+
+@-webkit-keyframes title2 {
+  from {
+    -webkit-transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px) translateX(10px);
+  }
+}
+
+@keyframes title2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px) translateX(10px);
+  }
+}
+
+@-webkit-keyframes title1 {
+  from {
+    -webkit-transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(5px) translateX(5px);
+  }
+}
+
+@keyframes title1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(5px) translateX(5px);
+  }
+}
+
+.navDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+//todo get rid of the colors
+//todo fix the absolute shit
+.menu {
+  position: relative;
+  z-index: 100;
+  background-color: blue;
+  text-align: right;
+}
+
+.menuDropDown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background-color: green;
+  // position:absolute;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+}
