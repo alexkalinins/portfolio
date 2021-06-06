@@ -4,9 +4,9 @@ import * as animationData from "../public/lottie/placeholder.json";
 
 export default function Home() {
   return (
-    <div>
+    <div className='page'>
       <main>
-        <NavBar />
+        <NavBar pageTitle="Portfolio `21" />
 
         <div className="hero">
           <h1>
@@ -14,7 +14,7 @@ export default function Home() {
               INTER-
               <br />
               DISCIPLINARY <br />
-              FRONT-END
+              CREATIVE
             </h1>
 
             <div id="shift1">
@@ -22,7 +22,7 @@ export default function Home() {
                 INTER-
                 <br />
                 DISCIPLINARY <br />
-                FRONT-END
+                CREATIVE
               </h1>
             </div>
             <div id="shift2">
@@ -30,7 +30,7 @@ export default function Home() {
                 INTER-
                 <br />
                 DISCIPLINARY <br />
-                FRONT-END
+                CREATIVE
               </h1>
             </div>
             <div id="shift3">
@@ -38,7 +38,7 @@ export default function Home() {
                 INTER-
                 <br />
                 DISCIPLINARY <br />
-                FRONT-END
+                CREATIVE
               </h1>
             </div>
             <div id="shift4">
@@ -46,7 +46,7 @@ export default function Home() {
                 INTER-
                 <br />
                 DISCIPLINARY <br />
-                FRONT-END
+                CREATIVE
               </h1>
             </div>
           </h1>
@@ -68,7 +68,7 @@ export default function Home() {
 
           <div>
             <p>
-              I am a freelance web designer and full-stack developer based in
+              I am a freelance web designer, full-stack developer, and photographer based in
               Barrie, Ontario. I borrow inspiration from other media, including
               photography, typography, and cinema, to create
               aesthecially-pleasing and practical websites and webapps.

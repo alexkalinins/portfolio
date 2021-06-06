@@ -61,7 +61,13 @@ p {
   font-size: 16pt;
 }
 
+.page{
+  padding: 1rem;
+}
+
 .hero {
+  margin-top: -10vh;
+
   padding: 1rem;
   font-size: 9vw;
   position: relative;
@@ -69,7 +75,7 @@ p {
     position: relative;
     & > * {
       position: relative;
-      z-index: 9999;
+      z-index: 999 ;
     }
   }
 }
@@ -90,10 +96,12 @@ span {
   justify-content: space-between;
   padding: 1rem;
   font-size: 80%;
+
+  text-align: center;
+
+  z-index: 10000;
 }
 
-//todo get rid of the colors
-//todo fix the absolute shit
 .menu {
   position: relative;
   z-index: 100;
@@ -107,6 +115,12 @@ span {
 
   position: absolute;
   right: 0;
+}
+
+.growLink:hover{
+  color: red;
+
+  transform: scale(1.1);
 }
 
 .sub {

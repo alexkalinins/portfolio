@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 export default function MenuDropdown() {
   const [showing, setShowing] = React.useState(false);
@@ -9,12 +10,24 @@ export default function MenuDropdown() {
       onMouseEnter={() => setShowing(true)}
       onMouseLeave={() => setShowing(false)}
     >
-      <span>Menu</span>
+      <span className="growLink">Menu</span>
       {showing && (
         <div className="menuDropDown">
-          <span>About</span>
-          <span>Projects</span>
-          <span>Contact</span>
+          <Link href="/" >
+            <span className="growLink">About</span>
+          </Link>
+
+          <Link href="/" >
+            <span className="growLink">Projects</span>
+          </Link>
+
+          <Link href="/photography" >
+            <span className="growLink">Photography</span>
+          </Link>
+
+          <Link href="/">
+            <span className="growLink">Contact</span>
+          </Link>
         </div>
       )}
     </div>
