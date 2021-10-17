@@ -2,7 +2,16 @@ import Lottie from "react-lottie";
 import NavBar from "../components/NavBar";
 import * as animationData from "../public/lottie/placeholder.json";
 
+
 export default function Home() {
+  const HeroText = ()=> (
+    <h1>
+      ALEX
+      <br />
+      KALININS
+    </h1>
+  )
+
   return (
     <div className='page'>
       <main>
@@ -10,44 +19,20 @@ export default function Home() {
 
         <div className="hero">
           <h1>
-            <h1>
-              INTER-
-              <br />
-              DISCIPLINARY <br />
-              CREATIVE
-            </h1>
+            <HeroText />
 
             <div id="shift1">
-              <h1>
-                INTER-
-                <br />
-                DISCIPLINARY <br />
-                CREATIVE
-              </h1>
+            <HeroText />
+
             </div>
             <div id="shift2">
-              <h1>
-                INTER-
-                <br />
-                DISCIPLINARY <br />
-                CREATIVE
-              </h1>
+            <HeroText />
             </div>
             <div id="shift3">
-              <h1>
-                INTER-
-                <br />
-                DISCIPLINARY <br />
-                CREATIVE
-              </h1>
+            <HeroText />
             </div>
             <div id="shift4">
-              <h1>
-                INTER-
-                <br />
-                DISCIPLINARY <br />
-                CREATIVE
-              </h1>
+            <HeroText />
             </div>
           </h1>
           {/* </div> */}
@@ -55,7 +40,7 @@ export default function Home() {
 
         {/* end of hero */}
         <div className="sub">
-          <div className="subLottie">
+          {/* <div className="subLottie">
             <Lottie
               options={{
                 loop: true,
@@ -64,7 +49,7 @@ export default function Home() {
                 rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
               }}
             />
-          </div>
+          </div> */}
 
           <div>
             <p>
