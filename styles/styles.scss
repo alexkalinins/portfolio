@@ -61,7 +61,20 @@ p {
   font-size: 16pt;
 }
 
-.page{
+footer {
+  p {
+    font-family: "AkzidenzGrotesk";
+    font-style: normal;
+    font-size: 12pt;
+    margin: .1rem;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page {
   padding: 1rem;
 }
 
@@ -71,11 +84,13 @@ p {
   padding: 1rem;
   font-size: 9vw;
   position: relative;
-  & > h1 {
+
+  &>h1 {
     position: relative;
-    & > * {
+
+    &>* {
       position: relative;
-      z-index: 999 ;
+      z-index: 999;
     }
   }
 }
@@ -104,7 +119,7 @@ span {
 
 .menu {
   position: relative;
-  z-index: 100;
+  z-index: 1000;
   text-align: right;
 }
 
@@ -117,7 +132,7 @@ span {
   right: 0;
 }
 
-.growLink:hover{
+.growLink:hover {
   color: red;
 
   transform: scale(1.1);
@@ -200,6 +215,7 @@ span {
   from {
     -webkit-transform: translateY(0px);
   }
+
   to {
     -webkit-transform: translateY(20px) translateX(20px);
   }
@@ -209,6 +225,7 @@ span {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(20px) translateX(20px);
   }
@@ -218,6 +235,7 @@ span {
   from {
     -webkit-transform: translateY(0px);
   }
+
   to {
     -webkit-transform: translateY(15px) translateX(15px);
   }
@@ -227,6 +245,7 @@ span {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(15px) translateX(15px);
   }
@@ -236,6 +255,7 @@ span {
   from {
     -webkit-transform: translateY(0px);
   }
+
   to {
     -webkit-transform: translateY(10px) translateX(10px);
   }
@@ -245,6 +265,7 @@ span {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(10px) translateX(10px);
   }
@@ -254,6 +275,7 @@ span {
   from {
     -webkit-transform: translateY(0px);
   }
+
   to {
     -webkit-transform: translateY(5px) translateX(5px);
   }
@@ -263,6 +285,7 @@ span {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(5px) translateX(5px);
   }

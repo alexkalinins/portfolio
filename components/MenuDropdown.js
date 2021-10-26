@@ -13,7 +13,7 @@ export default function MenuDropdown() {
       <span className="growLink">Menu</span>
       {showing && (
         <div className="menuDropDown">
-          <Link href="/" >
+          <Link href="/about" >
             <span className="growLink">About</span>
           </Link>
 

@@ -53,15 +53,11 @@ export default function Home() {
 
           <div>
             <p>
-              I am a freelance web designer, full-stack developer, and photographer based in
-              Barrie, Ontario. I borrow inspiration from other media, including
-              photography, typography, and cinema, to create
-              aesthecially-pleasing and practical websites and webapps.
+              I am an AI and Full-Stack developer based in Toronto. I study Computer Science and Cognitive Science at the University of Toronto.
             </p>
 
             <p>
-              I can help you build a custom and stunning website or webapp from
-              scratch with React.js or Next.js.
+              I like to make interesting projects that explore my interests and develop my skills.
             </p>
           </div>
         </div>
