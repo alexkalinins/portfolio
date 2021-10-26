@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function MenuDropdown() {
   const [showing, setShowing] = React.useState(false);
@@ -13,19 +13,19 @@ export default function MenuDropdown() {
       <span className="growLink">Menu</span>
       {showing && (
         <div className="menuDropDown">
-          <Link href="/about" >
+          <Link href="/about">
             <span className="growLink">About</span>
           </Link>
 
-          <Link href="/" >
+          <Link href="/">
             <span className="growLink">Projects</span>
           </Link>
 
-          <Link href="/photography" >
+          <Link href="/photography">
             <span className="growLink">Photography</span>
           </Link>
 
-          <Link href="/">
+          <Link href="/contact">
             <span className="growLink">Contact</span>
           </Link>
         </div>

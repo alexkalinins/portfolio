@@ -55,7 +55,7 @@ body {
   color: white;
 }
 
-p {
+p, label {
   font-family: "AkzidenzGrotesk";
   font-style: normal;
   font-size: 16pt;
@@ -148,10 +148,81 @@ span {
   }
 }
 
-.subLottie {
-  max-width: 70rem;
-  overflow: hidden;
-  flex-shrink: 1;
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-width: 50%;
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  input, textarea {
+    outline: none;
+
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,0);
+
+    font-family: AkzidenzGrotesk;
+    font-style: normal;
+    font-size: 12pt;
+
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    
+    transition: all 0.2s ease-in;
+
+    &:hover{
+      border: 2px solid;
+    }
+
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input[type='text']:focus{
+    border-color: red;
+  }
+  input[type='email']:focus{
+    border-color: green;
+  }
+  textarea:focus{
+    border-color: blue;
+  }
+  
+}
+
+//todo color
+.primaryButton{
+  background-color: rgba(0,0,0,0);
+  border: 2px solid white;
+
+  font-family: "MonumentExtended";
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    border: 2px solid;
+  }
+
+
+  cursor: pointer;
+  
+
+  outline: none;
 }
 
 .shiftingText {

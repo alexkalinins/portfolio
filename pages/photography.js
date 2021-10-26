@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 
 export default function photography() {
   return (
-    <div className='page'>
+    <div className="page">
       <main>
         <NavBar pageTitle="Photography" />
         <h1>Photo Gallery</h1>
@@ -16,9 +16,9 @@ export default function photography() {
               work&mdash;taking the photo is only one half of the process.
             </p>
             <p>
-              Analogue photography provides a greater sense of
-              authenticity, with each photograph having a direct connection to
-              the subject and each print being one-of-a-kind.
+              Analogue photography provides a greater sense of authenticity,
+              with each photograph having a direct connection to the subject and
+              each print being one-of-a-kind.
             </p>
           </span>
         </div>
