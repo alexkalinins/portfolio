@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import MovingCircles from "../components/MovingCircles";
 import NavBar from "../components/NavBar";
 import ShiftingTextHero from "../components/ShiftingTextHero";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <ShiftingTextHero />
 
         <div className="sub">
+          <MovingCircles/>
           <div>
             <p>
               I am an AI and Full-Stack developer based in Toronto. I study
@@ -18,6 +20,26 @@ export default function Home() {
               Toronto.
             </p>
 
+            <p>
+              I like to make interesting projects that explore my interests and
+              develop my skills.
+            </p>
+            <p>
+              I like to make interesting projects that explore my interests and
+              develop my skills.
+            </p>
+            <p>
+              I like to make interesting projects that explore my interests and
+              develop my skills.
+            </p>
+            <p>
+              I like to make interesting projects that explore my interests and
+              develop my skills.
+            </p>
+            <p>
+              I like to make interesting projects that explore my interests and
+              develop my skills.
+            </p>
             <p>
               I like to make interesting projects that explore my interests and
               develop my skills.

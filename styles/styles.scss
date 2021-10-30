@@ -140,12 +140,21 @@ span {
 
 .sub {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-content: center;
 
   p {
     overflow: visible;
   }
+}
+
+.circle{
+  height: 5rem;
+  width: 5rem;
+  border-radius:50%;
+  position: absolute;
+
+  
 }
 
 .contactForm {
@@ -223,6 +232,19 @@ span {
   
 
   outline: none;
+}
+
+.projectThumbnail{
+  display:flex;
+  //todo
+}
+
+.movingCircles{
+  min-width: 50%;
+  min-height:25%;
+  justify-self: right;
+  align-self: right;
+  background-color: brown;
 }
 
 .shiftingText {
