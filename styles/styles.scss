@@ -148,14 +148,7 @@ span {
   }
 }
 
-.circle{
-  height: 5rem;
-  width: 5rem;
-  border-radius:50%;
-  position: absolute;
 
-  
-}
 
 .contactForm {
   display: flex;
@@ -239,12 +232,18 @@ span {
   //todo
 }
 
+.circle{
+  height: 5rem;
+  width: 5rem;
+  border-radius:50%;
+  position: absolute;
+  border: 2px solid;
+}
+
 .movingCircles{
   min-width: 50%;
   min-height:25%;
-  justify-self: right;
-  align-self: right;
-  background-color: brown;
+  // background-color: brown;
 }
 
 .shiftingText {
