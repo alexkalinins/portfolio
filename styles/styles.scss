@@ -43,6 +43,13 @@ h1 {
   font-size: inherit;
 }
 
+h2{
+  color: white;
+  font-family: "MonumentExtended";
+  font-style: regular;
+  font-weight: 400;
+}
+
 .outlinedText {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke-width: 0.1rem;
@@ -55,10 +62,11 @@ body {
   color: white;
 }
 
-p, label {
+p,
+label {
   font-family: "AkzidenzGrotesk";
   font-style: normal;
-  font-size: 16pt;
+  font-size: 1.6rem;
 }
 
 footer {
@@ -66,7 +74,7 @@ footer {
     font-family: "AkzidenzGrotesk";
     font-style: normal;
     font-size: 12pt;
-    margin: .1rem;
+    margin: 0.1rem;
   }
 
   display: flex;
@@ -75,24 +83,37 @@ footer {
 }
 
 .page {
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.frontPage{
+  min-height: 100vh;
+  margin-top: 10vh;
 }
 
 .hero {
   margin-top: -10vh;
 
-  padding: 1rem;
+  user-select: none;
+
   font-size: 9vw;
   position: relative;
 
-  &>h1 {
+  & > h1 {
     position: relative;
 
-    &>* {
+    & > * {
       position: relative;
       z-index: 999;
     }
   }
+}
+
+.placeholder {
+  min-height: 100vh;
+  padding: 5rem;
+  padding-top: 15rem;
 }
 
 span {
@@ -115,6 +136,7 @@ span {
   text-align: center;
 
   z-index: 10000;
+  user-select: none;
 }
 
 .menu {
@@ -130,11 +152,12 @@ span {
 
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .growLink:hover {
   color: red;
-
+  cursor: pointer;
   transform: scale(1.1);
 }
 
@@ -143,12 +166,17 @@ span {
   flex-direction: row-reverse;
   align-content: center;
 
+  margin-top: -5vh;
+
+  .subText {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   p {
     overflow: visible;
   }
 }
-
-
 
 .contactForm {
   display: flex;
@@ -162,13 +190,14 @@ span {
     margin-bottom: 1rem;
   }
 
-  input, textarea {
+  input,
+  textarea {
     outline: none;
 
     margin-top: 0.25rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 
     font-family: AkzidenzGrotesk;
     font-style: normal;
@@ -176,34 +205,32 @@ span {
 
     border: 2px solid white;
     border-radius: 0.25rem;
-    
+
     transition: all 0.2s ease-in;
 
-    &:hover{
+    &:hover {
       border: 2px solid;
     }
-
   }
 
   textarea {
     resize: none;
   }
 
-  input[type='text']:focus{
+  input[type="text"]:focus {
     border-color: red;
   }
-  input[type='email']:focus{
+  input[type="email"]:focus {
     border-color: green;
   }
-  textarea:focus{
+  textarea:focus {
     border-color: blue;
   }
-  
 }
 
 //todo color
-.primaryButton{
-  background-color: rgba(0,0,0,0);
+.primaryButton {
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid white;
 
   font-family: "MonumentExtended";
@@ -216,34 +243,85 @@ span {
   margin-bottom: 1rem;
 
   transition: all 0.2s ease-in-out;
-  &:hover{
+  &:hover {
     border: 2px solid;
   }
 
-
   cursor: pointer;
-  
 
   outline: none;
 }
 
-.projectThumbnail{
-  display:flex;
+.projectList{
+  z-index: 10;;
+}
+
+.projectThumbnail {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid white;
+  border-radius: 1rem;
+  
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+
+  div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+      max-width: 30%;
+    }
+
+    p{
+      margin-left: 1rem;
+      margin-right: 1rem;      
+    }
+
+    span{
+      margin-left: 1rem;
+      border: 1px solid white;
+      border-radius: 0.25rem;
+      padding: 0.5rem;
+    }
+
+  }
+
   //todo
 }
 
-.circle{
+.circle {
   height: 5rem;
   width: 5rem;
-  border-radius:50%;
+  border-radius: 50%;
   position: absolute;
-  border: 2px solid;
+
+  opacity: 50%;
+
+  left: 50%;
+  right: 0;
+
+  top: 0%;
+  bottom: -25%;
+
+  margin: auto;
+
+  z-index: 1;
 }
 
-.movingCircles{
+.movingCircles {
   min-width: 50%;
-  min-height:25%;
-  // background-color: brown;
+
+  min-height: 100%;
+
+  // todo remove background color
+  background-color: rgba(255, 0, 0, 0.25);
+  align-content: center;
 }
 
 .shiftingText {
