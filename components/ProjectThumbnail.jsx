@@ -7,7 +7,7 @@ export default function ProjectThumbnail({ data }) {
   return (
     <div className="projectThumbnail">
       <div>
-        <h2>{data.title}</h2>
+        <h3>{data.title}</h3>
         <div>
           {data.tags.map((tag) => (
             <span className="tag">{tag}</span>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { v4 as uuid } from "uuid";
+import jstat from "jstat"
 
 const COLORS = [
   "#FF0000",
@@ -11,34 +12,41 @@ const COLORS = [
   "#00FFFF",
 ];
 
-const MIN = 100;
-const MAX = 1000;
+// range of distance from the center (radius)
+const MIN = 200;
+const MAX = 3000;
 
-// the random size of the circles in REM
-const MIN_SIZE = 10;
-const MAX_SIZE = 15;
+// range of size
+const MIN_SIZE = 15;
+const MAX_SIZE = 20;
 
-const CIRCLE_COUNT = 75;
+const CIRCLE_COUNT = 50;
 
 // array of 10 numbers
 const array = [...Array(CIRCLE_COUNT).keys()];
 
 const Circle = () => {
-  let x = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
-  let y = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+  let r = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+  
+  let theta = jstat.normal.sample(0.3,0.2) * 2 * Math.PI;
 
-  // randomly make x a positive or negative number
-  x *= Math.random() < 0.5 ? -1 : 1;
-  y *= Math.random() < 0.5 ? -1 : 1;
+  let x = r * Math.cos(theta);
+  let y = r * Math.sin(theta);
 
   const { scrollYProgress } = useViewportScroll();
   const xTransform = useTransform(scrollYProgress, [0, 0.5], [0, x]);
   const yTransform = useTransform(scrollYProgress, [0, 0.5], [0, y]);
 
+
   const opacityTransform = useTransform(
     scrollYProgress,
-    [0, 0.25, 0.5],
-    [1, 1, 0.25]
+    [0, 0.1, 0.5],
+    [1, 0.3, 0.25]
+  );
+
+  const filter = useTransform(
+    scrollYProgress,
+    v=>`blur(${v*10}px) hue-rotate(${v*360}deg)`,
   );
 
   // generate random size of circle
@@ -46,16 +54,20 @@ const Circle = () => {
 
   return (
     <motion.div
-      className="circle"
+      className="circleContainer"
       style={{
-        width: size + "rem",
-        height: size + "rem",
-        backgroundColor: COLORS[Math.floor(Math.random() * COLORS.length)],
         translateX: xTransform,
         translateY: yTransform,
         opacity: opacityTransform,
+        filter
       }}
-    />
+    >
+      <div className="circle" style={{
+        width: size + "rem",
+        height: size + "rem",
+        backgroundColor: COLORS[Math.floor(Math.random() * COLORS.length)],
+      }}/>
+    </motion.div>
   );
 };
 

@@ -1,0 +1,16 @@
+.circle {
+    border-radius: 50%;
+    position: absolute;
+  
+    mix-blend-mode: color-dodge;
+  
+    z-index: 1;
+  }
+  
+  .circleContainer {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 15rem;
+    height: 15rem;
+  }

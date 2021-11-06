@@ -1395,6 +1395,11 @@ jsonfile-updater@^3.1.0:
   resolved "https://registry.yarnpkg.com/jsonfile-updater/-/jsonfile-updater-3.1.0.tgz#fd29c28d85bb2a96200b53832643a17865db1e85"
   integrity sha512-G6DB55KX4Cc5t0Zpg4kfy2b3N592fahyoUJz5rk4VmS8lccXskgUbjUEX51iXMc6gh6sE7urmXWJsW6EqDozVQ==
 
+jstat@^1.9.5:
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/jstat/-/jstat-1.9.5.tgz#9941741566f683624ddeb56f5ba60ed8c29b374e"
+  integrity sha512-cWnp4vObF5GmB2XsIEzxI/1ZTcYlcfNqxQ/9Fp5KFUa0Jf/4tO0ZkGVnqoEHDisJvYgvn5n3eWZbd2xTVJJPUQ==
+
 load-json-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
