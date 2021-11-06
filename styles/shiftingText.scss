@@ -1,0 +1,146 @@
+@import "./globals.scss";
+
+.outlinedText {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: white;
+
+    margin-top: 0;
+}
+
+.shiftingText {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+}
+
+#shift1 {
+    @extend .shiftingText;
+
+    -webkit-animation: title1 3s ease-in-out alternate infinite;
+    animation: title1 3s ease-in-out alternate infinite;
+
+    z-index: 100;
+
+    h1 {
+        @extend .outlinedText;
+    }
+}
+
+#shift2 {
+    @extend .shiftingText;
+    -webkit-animation: title2 3s ease-in-out alternate infinite;
+    animation: title2 3s ease-in-out alternate infinite;
+    z-index: 80;
+
+    h1 {
+        @extend .outlinedText;
+        -webkit-text-stroke-color: red;
+    }
+}
+
+#shift3 {
+    @extend .shiftingText;
+    -webkit-animation: title3 3s ease-in-out alternate infinite;
+    animation: title3 3s ease-in-out alternate infinite;
+    z-index: 70;
+
+    h1 {
+        @extend .outlinedText;
+        -webkit-text-stroke-color: green;
+    }
+}
+
+#shift4 {
+    @extend .shiftingText;
+    -webkit-animation: title4 3s ease-in-out alternate infinite;
+    animation: title4 3s ease-in-out alternate infinite;
+    z-index: 60;
+
+    h1 {
+        @extend .outlinedText;
+        -webkit-text-stroke-color: blue;
+    }
+}
+
+@-webkit-keyframes title4 {
+    from {
+        -webkit-transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(20px) translateX(20px);
+    }
+}
+
+@keyframes title4 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(20px) translateX(20px);
+    }
+}
+
+@-webkit-keyframes title3 {
+    from {
+        -webkit-transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(15px) translateX(15px);
+    }
+}
+
+@keyframes title3 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(15px) translateX(15px);
+    }
+}
+
+@-webkit-keyframes title2 {
+    from {
+        -webkit-transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(10px) translateX(10px);
+    }
+}
+
+@keyframes title2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10px) translateX(10px);
+    }
+}
+
+@-webkit-keyframes title1 {
+    from {
+        -webkit-transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(5px) translateX(5px);
+    }
+}
+
+@keyframes title1 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(5px) translateX(5px);
+    }
+}
