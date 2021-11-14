@@ -34,9 +34,8 @@ const Circle = () => {
   let y = r * Math.sin(theta);
 
   const { scrollYProgress } = useViewportScroll();
-  const xTransform = useTransform(scrollYProgress, [0, 0.5], [0, x]);
-  const yTransform = useTransform(scrollYProgress, [0, 0.5], [0, y]);
-
+  const xTransform = useTransform(scrollYProgress, [0, 0.5], [0.005*x, x]);
+  const yTransform = useTransform(scrollYProgress, [0, 0.5], [0.005*y, y]);
 
   const opacityTransform = useTransform(
     scrollYProgress,

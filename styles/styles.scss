@@ -3,16 +3,9 @@
 @import "./globals.scss";
 
 
-
-
-.page {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .frontPage {
   min-height: 100vh;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .hero {
@@ -25,6 +18,9 @@
 
   &>h1 {
     position: relative;
+
+    // font-size: 7rem;
+    font-size: max(5vw, 5vh);
 
     &>* {
       position: relative;
@@ -98,23 +94,26 @@
   .subText {
     padding-left: 1rem;
     padding-right: 1rem;
-    overflow: visible;
+    // overflow: visible;
     z-index: 10;
 
     max-width: 50%;
 
+    background-color: rgba(100,100,100,0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+
+
     @media only screen and (max-width: $medium) {
-      // position:absolute;
-      // float: left;
       min-width: 70%;
       max-width: 100%;
       margin-right: -30vw;
     }
   }
 
-  p {
-    overflow: visible;
-  }
+  // p {
+  //   // overflow: visible;
+  // }
 }
 
 .movingCircles {
@@ -122,13 +121,15 @@
 
   min-height: 100%;
 
-  // todo remove background color
-  // background-color: rgba(255, 0, 0, 0.25);
+  margin-right: -10vw;
+  margin-left: 10vw;
+
+  margin-top: 5vh;
 
   display: grid;
   place-items: center;
 
-  overflow: hidden;
+  // overflow: visible;
 }
 
 .contactForm {
@@ -194,8 +195,9 @@
   border: 1px solid white;
   border-radius: 1rem;
 
-  padding: 1rem;
+  padding: 3rem;
   margin-bottom: 2rem;
+  padding-top: 0rem;
 
   div {
     display: flex;
@@ -222,21 +224,41 @@
     }
 
     h3 {
-      font-size: 1.7em;
+      font-size: 4rem;
       padding: 0;
     }
+    
+    .subTitleDiv{
+      display:flex;
+      flex-direction: column;
 
-    span {
-      margin-left: 1rem;
-      border: 1px solid white;
-      border-radius: 0.25rem;
-      padding: 0.5rem;
+      align-items: left;
+      justify-content: space-evenly;
 
-      font-family: "MonumentExtended";
-      font-weight: 200;
-      font-size: 0.9em;
+      span{
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+
+        text-align: left;
+
+        justify-self: left;
+      }
     }
+
+    
   }
 
   //todo
+}
+
+.tag {
+  margin-left: 3rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+
+  font-family: "MonumentExtended";
+  font-weight: 200;
+  font-size: 2rem;
 }

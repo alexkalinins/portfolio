@@ -30,8 +30,8 @@
     font-display: swap;
 }
 
-$small: 400px;
-$medium: 900px;
+$small: 600px;
+$medium: 1000px;
 $large: 1200px;
 
 
@@ -47,7 +47,7 @@ h1 {
     color: white;
     font-family: "MonumentExtended";
     font-style: black;
-    font-size: inherit;
+    // font-size: inherit;
 }
 
 h3 {
@@ -67,7 +67,7 @@ label {
     font-family: "AkzidenzGrotesk";
     font-style: normal;
     // font-size: 1.6rem;
-    font-size: 16pt;
+    font-size: max(18pt, 3.5rem);
 }
 
 footer {
@@ -113,4 +113,18 @@ span {
     cursor: pointer;
 
     outline: none;
+}
+
+.page {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+
+    .pageContent {
+        padding: 2rem;
+
+        h1{
+            font-size: 3rem;
+        }
+    }
 }

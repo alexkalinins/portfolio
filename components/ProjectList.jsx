@@ -1,5 +1,5 @@
 import React from 'react'
-import { thumbnails } from '../data/projects/thumbnails.ts';
+import { thumbnails } from '../data/projects/thumbnails.js';
 import { v4 as uuid } from "uuid";
 import ProjectThumbnail from "./ProjectThumbnail"
 

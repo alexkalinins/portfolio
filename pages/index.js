@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import MovingCircles from "../components/MovingCircles";
 import NavBar from "../components/NavBar";
@@ -29,15 +30,14 @@ export default function Home() {
               <p>Looking for an internship position for Summer 2021.</p>
             </div>
           </div>
-        </div>
-        
-    <ProjectList/>
 
-        <div className="placeholder">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          euismod, urna eu tincidunt consectetur, nisi nunc fermentum nisi,
-          euismod aliquam nunc nisl eu nisi. Pellentesque habitant morbi
-          tristique senectus et netus et malesuada fames ac turpis egestas.
+          <div className="pageContent">
+            <h1>My Projects</h1>
+            <ProjectList />
+
+            <h1>Contact Me</h1>
+            <ContactForm />
+          </div>
         </div>
       </main>
       <Footer />
