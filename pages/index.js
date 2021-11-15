@@ -32,11 +32,16 @@ export default function Home() {
           </div>
 
           <div className="pageContent">
+            <div className="spacer" />
+
             <h1>My Projects</h1>
             <ProjectList />
 
+            <div className="spacer" />
+
             <h1>Contact Me</h1>
             <ContactForm />
+            <div className="spacer" />
           </div>
         </div>
       </main>

@@ -11,7 +11,8 @@ export const thumbnails = [
         used to create and manipulate shapes in HTML Canvas.',
         image: '/media/images/teablocks.png',
         link: 'https://www.google.com',
-        tags: ['Full-Stack', 'React', 'TypeScript']
+        tags: ['Full-Stack', 'React', 'TypeScript'],
+        demo: 'https://alexkalinins.github.io/teablocks-demo/',
     },
     {
         title: 'Postcards GAN',
@@ -21,7 +22,7 @@ export const thumbnails = [
         project was to experiment with GANs and generate images that look like postcards.',
         image: '/media/images/postcards-smallset-100epochs.gif',
         link: 'https://www.google.com',
-        tags: ['Machine Learning', 'TensorFlow', 'Python']
+        tags: ['Machine Learning', 'TensorFlow', 'Python'],
     },
     {
         title: 'Hairnet AI',
@@ -31,7 +32,8 @@ export const thumbnails = [
         in Blender.',
         image: '/media/images/hairnet-data.jpg',
         link: 'https://www.google.com',
-        tags: ['Machine Learning', 'PyTorch', 'Blender']
+        tags: ['Machine Learning', 'PyTorch', 'Blender'],
+        github: 'https://github.com/alexkalinins/hairnet-ai'
     },
     {
         title: '\"Swiss Cheese\" Game',
@@ -41,6 +43,19 @@ export const thumbnails = [
         image: 'https://picsum.photos/1920/1083',
         //TODO IMAGE
         link: 'https://www.google.com',
-        tags: ['Java', 'Game Dev', 'Algorithm']
+        tags: ['Java', 'Game Dev', 'Algorithm'],
+        github: 'https://github.com/alexkalinins/swisscheese'
     },
+    {
+        title: 'Portfolio \`21',
+        timeline: 'September 2021 - Ongoing',
+        description: 'A personal portfolio website. The site was built using NextJS and\
+        SCSS. The animations on the hero page (circles and sliding text) use CSS animations.',
+        image: 'https://picsum.photos/1920/1080',
+        link: 'https://www.google.com',
+        tags: ['React','NextJS', 'SCSS'],
+        github: 'https://github.com/alexkalinins/portfolio',
+        //! TODO actual domain here
+        demo: 'localhost:3000'
+    }
 ];

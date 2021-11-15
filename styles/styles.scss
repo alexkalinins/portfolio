@@ -1,6 +1,8 @@
 @import "./circles.scss";
 @import "./shiftingText.scss";
 @import "./globals.scss";
+@import "./contactForm.scss";
+@import "./footer.scss";
 
 
 .frontPage {
@@ -20,7 +22,7 @@
     position: relative;
 
     // font-size: 7rem;
-    font-size: max(5vw, 5vh);
+    font-size: max(4vw, 4vh);
 
     &>* {
       position: relative;
@@ -110,10 +112,6 @@
       margin-right: -30vw;
     }
   }
-
-  // p {
-  //   // overflow: visible;
-  // }
 }
 
 .movingCircles {
@@ -132,57 +130,7 @@
   // overflow: visible;
 }
 
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  min-width: 50%;
 
-  p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  input,
-  textarea {
-    outline: none;
-
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0);
-
-    font-family: AkzidenzGrotesk;
-    font-style: normal;
-    font-size: 12pt;
-
-    border: 2px solid white;
-    border-radius: 0.25rem;
-
-    transition: all 0.2s ease-in;
-
-    &:hover {
-      border: 2px solid;
-    }
-  }
-
-  textarea {
-    resize: none;
-  }
-
-  input[type="text"]:focus {
-    border-color: red;
-  }
-
-  input[type="email"]:focus {
-    border-color: green;
-  }
-
-  textarea:focus {
-    border-color: blue;
-  }
-}
 
 .projectList {
   z-index: 100;
@@ -199,7 +147,7 @@
   margin-bottom: 2rem;
   padding-top: 0rem;
 
-  div {
+  .divHorizontal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,15 +159,6 @@
 
       @media only screen and (max-width: $medium) {
         max-width: 100%;
-      }
-    }
-
-    p {
-      margin-left: 1rem;
-      margin-right: 1rem;
-
-      @media only screen and (min-width: $medium) {
-        max-width: 50%;
       }
     }
 
@@ -246,6 +185,10 @@
       }
     }
 
+    .thumbButtonDiv{
+      @extend .divHorizontal;
+      justify-items: flex-start;
+    }
     
   }
 
@@ -261,4 +204,16 @@
   font-family: "MonumentExtended";
   font-weight: 200;
   font-size: 2rem;
+}
+
+.projThumbText{
+  display:flex;
+  flex-direction: column;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @media only screen and (min-width: $medium) {
+    max-width: 50%;
+  }
 }

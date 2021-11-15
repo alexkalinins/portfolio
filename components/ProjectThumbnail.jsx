@@ -1,5 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 import { v4 as uuid } from "uuid";
+import SocialButton from "./SocialButton";
 
 // array of red green blue COLORS
 const COLORS = [
@@ -12,12 +13,17 @@ const COLORS = [
  * A react function component that displays a ProjectThumbnail object.
  */
 export default function ProjectThumbnail({ data }) {
+
+  let MemoImage = memo(() => {
+    return (<img src={data.image} alt={data.title} />)
+  }, [data.title, data.image]);
+
   return (
     <div className="projectThumbnail">
-      <div>
+      <div className="divHorizontal">
         <div className="subTitleDiv">
           <h3>{data.title}</h3>
-          {data.timeline&&<span>{data.timeline}</span>}
+          {data.timeline && <span>{data.timeline}</span>}
         </div>
         <div>
           {data.tags.map((tag, index) => (
@@ -27,9 +33,15 @@ export default function ProjectThumbnail({ data }) {
           ))}
         </div>
       </div>
-      <div>
-        <img src={data.image} alt={data.title} />
-        <p>{data.description}</p>
+      <div className="divHorizontal">
+        <MemoImage />
+        <div className="projThumbText">
+          <p>{data.description}</p>
+          <div className="thubButtonDiv">
+            {data.github && <SocialButton url={data.github} title="GitHub" />}
+            {data.demo && <SocialButton url={data.demo} title="Demo" />}
+          </div>
+        </div>
       </div>
     </div>
   );
