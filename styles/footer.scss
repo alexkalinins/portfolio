@@ -6,7 +6,9 @@ footer {
     grid-template-rows: auto;
 
 
-    justify-items: center;
+    &>*{
+        justify-self: center;
+    }
 
     &>:nth-child(1){
         justify-self: start;

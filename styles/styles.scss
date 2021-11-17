@@ -3,6 +3,7 @@
 @import "./globals.scss";
 @import "./contactForm.scss";
 @import "./footer.scss";
+@import "./projectThumbnail.scss";
 
 
 .frontPage {
@@ -30,14 +31,6 @@
     }
   }
 }
-
-.placeholder {
-  min-height: 100vh;
-  padding: 5rem;
-  padding-top: 15rem;
-}
-
-
 
 .navDiv {
   display: flex;
@@ -128,106 +121,6 @@
   }
 }
 
-.movingCircles {
-  min-width: 50%;
-
-  min-height: 100%;
-
-  margin-right: -10vw;
-  margin-left: 10vw;
-
-  margin-top: 5vh;
-
-  display: grid;
-  place-items: center;
-
-  // overflow: visible;
-}
-
-
-
 .projectList {
   z-index: 100;
-}
-
-.projectThumbnail {
-  display: flex;
-  flex-direction: column;
-
-  border: 1px solid white;
-  border-radius: 1rem;
-
-  padding: 3rem;
-  margin-bottom: 2rem;
-  padding-top: 0rem;
-
-  .divHorizontal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-      max-width: 40%;
-
-      @media only screen and (max-width: $medium) {
-        max-width: 100%;
-      }
-    }
-
-    h3 {
-      font-size: 4rem;
-      padding: 0;
-    }
-
-    .subTitleDiv {
-      display: flex;
-      flex-direction: column;
-
-      align-items: left;
-      justify-content: space-evenly;
-
-      span {
-        margin-top: -4rem;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-
-        text-align: left;
-
-        justify-self: left;
-      }
-    }
-
-    .thumbButtonDiv {
-      @extend .divHorizontal;
-      justify-items: flex-start;
-    }
-
-  }
-
-  //todo
-}
-
-.tag {
-  margin-left: 3rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 1rem;
-
-  font-family: "MonumentExtended";
-  font-weight: 200;
-  font-size: 2rem;
-}
-
-.projThumbText {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: 1rem;
-  margin-right: 1rem;
-
-  @media only screen and (min-width: $medium) {
-    max-width: 50%;
-  }
 }

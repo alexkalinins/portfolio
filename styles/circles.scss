@@ -16,3 +16,17 @@
   width: 15rem;
   height: 15rem;
 }
+
+.movingCircles {
+  min-width: 50%;
+
+  min-height: 100%;
+
+  margin-right: -10vw;
+  margin-left: 10vw;
+
+  margin-top: 5vh;
+
+  display: grid;
+  place-items: center;
+}

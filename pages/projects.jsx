@@ -7,8 +7,9 @@ export default function projects() {
         <div className="page">
             <main>
                 <NavBar pageTitle="Projects" />
+                
                 <div className="pageContent">
-                    <h1>My Projects</h1>
+                    <h1>Selected Projects</h1>
                     <ProjectList/>
 
                 </div>

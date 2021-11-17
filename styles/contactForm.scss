@@ -59,7 +59,7 @@
         border: 2px solid white;
         border-radius: 0.25rem;
 
-        transition: all 0.2s ease-in;
+        transition: all 0.1s ease-in;
 
         font-family: AkzidenzGrotesk;
         font-style: normal;
@@ -75,16 +75,19 @@
         min-height: 20vh;
     }
 
-    &>input[type="text"]:focus {
+    &>input[type="text"]:focus,&>input[type="text"]:hover {
         border-color: red;
+        transform: scale(1.01);
     }
 
-    &>input[type="email"]:focus {
+    &>input[type="email"]:focus,&>input[type="email"]:hover {
         border-color: green;
+        transform: scale(1.01);
     }
 
-    &>textarea:focus {
+    &>textarea:focus, &>textarea:hover {
         border-color: blue;
+        transform: scale(1.01);
     }
 }
 

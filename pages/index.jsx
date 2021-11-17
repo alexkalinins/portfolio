@@ -37,7 +37,7 @@ export default function Home() {
           <div className="pageContent">
             <div className="spacer" />
 
-            <h1>My Projects</h1>
+            <h1>Selected Projects</h1>
             <ProjectList />
 
             <div className="spacer" />

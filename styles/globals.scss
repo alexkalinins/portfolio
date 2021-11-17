@@ -1,3 +1,4 @@
+// TODO switch to CDN
 @font-face {
     font-family: "MonumentExtended";
     src: url("/fonts/MonumentExtended/MonumentExtended-Black.ttf");
@@ -53,12 +54,14 @@ h1 {
     // font-size: inherit;
 }
 
-h3 {
+h3,
+h2 {
     color: white;
     font-family: "MonumentExtended";
     font-style: regular;
     font-weight: 400;
 }
+
 
 
 body {
@@ -70,7 +73,7 @@ label {
     font-family: "AkzidenzGrotesk";
     font-style: normal;
     // font-size: 1.6rem;
-    font-size: max(18pt, 3.5rem);
+    font-size: max(18pt, 3.0rem);
 }
 
 span {
@@ -103,6 +106,8 @@ span {
 
     &:hover {
         border: 2px solid;
+        background-color: gray;
+        transform: scale(1.01);
     }
 
     cursor: pointer;
@@ -118,15 +123,34 @@ span {
     align-content: center;
 
     .pageContent {
-        // padding: 2rem;
+        h1 {
+            font-size: 4rem;
+        }
 
-        h1{
+        h2 {
             font-size: 3rem;
         }
     }
 }
 
-.spacer{
+.spacer {
     height: 5vh;
 }
 
+
+.tag {
+    margin-left: 3rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+
+    font-family: "MonumentExtended";
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.placeholder {
+    min-height: 100vh;
+    padding: 5rem;
+    padding-top: 15rem;
+}
