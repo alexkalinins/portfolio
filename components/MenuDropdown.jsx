@@ -21,9 +21,9 @@ export default function MenuDropdown() {
             <span className="growLink">Projects</span>
           </Link>
 
-          <Link href="/photography">
+          {/* <Link href="/photography">
             <span className="growLink">Photography</span>
-          </Link>
+          </Link> */}
 
           <Link href="/contact">
             <span className="growLink">Contact</span>

@@ -44,16 +44,17 @@
   flex-direction: row;
   flex-wrap: nowrap;
 
+  align-items: center;
+
   justify-content: space-between;
-  padding: 1rem;
-  // font-size: 80%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
   font-size: 12pt;
 
   @media only screen and (max-width: $medium) {
     font-size: 10pt;
   }
-
-
 
   text-align: center;
 
@@ -83,6 +84,18 @@
   transform: scale(1.1);
 }
 
+.socialButtonRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  align-content: center;
+  align-items: center;
+}
+
 .sub {
   display: flex;
   flex-direction: row-reverse;
@@ -94,14 +107,15 @@
   margin-top: -5vh;
 
   .subText {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
     // overflow: visible;
     z-index: 10;
 
     max-width: 50%;
 
-    background-color: rgba(100,100,100,0.1);
+    background-color: rgba(100, 100, 100, 0.1);
     backdrop-filter: blur(2px);
     border-radius: 15px;
 
@@ -166,15 +180,15 @@
       font-size: 4rem;
       padding: 0;
     }
-    
-    .subTitleDiv{
-      display:flex;
+
+    .subTitleDiv {
+      display: flex;
       flex-direction: column;
 
       align-items: left;
       justify-content: space-evenly;
 
-      span{
+      span {
         margin-top: -4rem;
         margin-bottom: 2rem;
         font-size: 1.5rem;
@@ -185,11 +199,11 @@
       }
     }
 
-    .thumbButtonDiv{
+    .thumbButtonDiv {
       @extend .divHorizontal;
       justify-items: flex-start;
     }
-    
+
   }
 
   //todo
@@ -206,8 +220,8 @@
   font-size: 2rem;
 }
 
-.projThumbText{
-  display:flex;
+.projThumbText {
+  display: flex;
   flex-direction: column;
 
   margin-left: 1rem;

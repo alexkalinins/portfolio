@@ -73,21 +73,6 @@ label {
     font-size: max(18pt, 3.5rem);
 }
 
-footer {
-    p {
-        font-family: "AkzidenzGrotesk";
-        font-style: normal;
-        font-size: 12pt;
-        margin: 0.1rem;
-    }
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    align-items: center;
-}
-
 span {
     font-family: "MonumentExtended";
     font-style: light;
@@ -112,6 +97,7 @@ span {
     color: inherit;
 
     width: 100%;
+    min-height: 7vh;
 
     transition: all 0.2s ease-in-out;
 
@@ -129,8 +115,10 @@ span {
     padding-right: 5rem;
     padding-top: 2rem;
 
+    align-content: center;
+
     .pageContent {
-        padding: 2rem;
+        // padding: 2rem;
 
         h1{
             font-size: 3rem;

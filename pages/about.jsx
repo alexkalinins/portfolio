@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import SocialButtonRow from '../components/SocialButtonRow';
 
 export default function about() {
   return (
@@ -23,6 +24,7 @@ export default function about() {
             tutorial. Outside my academic and professional careers, I am
             passionate about music, literature and photography.
           </p>
+          <SocialButtonRow/>
         </div>
       </main>
       <Footer />

@@ -4,6 +4,7 @@ import MovingCircles from "../components/MovingCircles";
 import NavBar from "../components/NavBar";
 import ProjectList from "../components/ProjectList";
 import ShiftingTextHero from "../components/ShiftingTextHero";
+import SocialButtonRow from '../components/SocialButtonRow';
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
                 computational cognition 🧠
               </p>
               <p>Looking for an internship position for Summer 2021.</p>
+
+              <SocialButtonRow/>
             </div>
           </div>
 
@@ -41,6 +44,7 @@ export default function Home() {
 
             <h1>Contact Me</h1>
             <ContactForm />
+            
             <div className="spacer" />
           </div>
         </div>
