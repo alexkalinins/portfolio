@@ -30,23 +30,23 @@ export default function Home() {
               </p>
               <p>Looking for an internship position for Summer 2021.</p>
 
-              <SocialButtonRow/>
+              <SocialButtonRow />
             </div>
           </div>
+        </div>
 
-          <div className="pageContent">
-            <div className="spacer" />
+        <div className="pageContent">
+          <div className="spacer" />
 
-            <h1>Selected Projects</h1>
-            <ProjectList />
+          <h1>Selected Projects</h1>
+          <ProjectList />
 
-            <div className="spacer" />
+          <div className="spacer" />
 
-            <h1>Contact Me</h1>
-            <ContactForm />
-            
-            <div className="spacer" />
-          </div>
+          <h1>Contact Me</h1>
+          <ContactForm />
+
+          <div className="spacer" />
         </div>
       </main>
       <Footer />

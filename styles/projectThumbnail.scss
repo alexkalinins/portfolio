@@ -1,9 +1,9 @@
 @import "./globals.scss";
 
-.NprojectThumbnail {
+.projectThumbnail {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr auto;
 
     border: 1px solid white;
     border-radius: 1rem;
@@ -12,11 +12,65 @@
     margin-bottom: 2rem;
     padding-top: 0rem;
 
+    justify-items: stretch;
+    align-items: center;
 
+    gap: 2rem;
+
+    .tag{
+        font-size: 1.75rem;
+    }
+
+    img {
+        max-width: 40vw;
+        height: auto;
+
+        justify-self: start;
+
+        // @media only screen and (max-width: $medium) {
+        //     max-width: 100%;
+        // }
+    }
+
+    h3 {
+        font-size: 4rem;
+        padding: 0;
+    }
+
+    @media only screen and (max-width: $medium) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr auto auto;
+
+        align-items: start;
+        justify-items: start;
+
+        img{
+            max-width: 100%;
+        }
+
+    }
+
+    // @media only screen and (max-width: $medium) {
+    //     grid-template-rows: 1fr 1fr 3fr;
+    //     row-gap: 1rem;
+
+    //     .subTitleDiv{
+    //         grid-column: span 2;
+    //     }
+
+    //     .tagDiv{
+    //         grid-column: span 2;
+    //     }
+        
+    //     // &:nth-child(0){
+    //     //     grid-column: span 2;
+    //     // }        
+
+    // }
 
 }
 
-.projectThumbnail {
+.NprojectThumbnail {
     display: flex;
     flex-direction: column;
 
@@ -51,40 +105,27 @@
     justify-content: space-between;
     align-items: center;
 
-    img {
-        max-width: 40%;
+}
 
-        @media only screen and (max-width: $medium) {
-            max-width: 100%;
-        }
+.subTitleDiv {
+    display: flex;
+    flex-direction: column;
+
+    align-items: left;
+    justify-content: space-evenly;
+
+    span {
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+
+        text-align: left;
+
+        justify-self: left;
     }
+}
 
-    h3 {
-        font-size: 4rem;
-        padding: 0;
-    }
-
-    .subTitleDiv {
-        display: flex;
-        flex-direction: column;
-
-        align-items: left;
-        justify-content: space-evenly;
-
-        span {
-            margin-top: -4rem;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-
-            text-align: left;
-
-            justify-self: left;
-        }
-    }
-
-    .thumbButtonDiv {
-        @extend .divHorizontal;
-        justify-items: flex-start;
-    }
-
+.thumbButtonDiv {
+    @extend .divHorizontal;
+    justify-items: flex-start;
 }
