@@ -1,3 +1,4 @@
+// stock photo placeholder link https://picsum.photos/1920/1080
 
 /**
  * An array of data for project thumbnails.
@@ -40,8 +41,7 @@ export const thumbnails = [
         timeline: 'November - December 2017',
         description: 'A maze exploration game written in Java using Randomized Depth-First Search algorithm\
         for procedural maze generation. The raycasting rendering engine was built from scratch.',
-        image: 'https://picsum.photos/1920/1083',
-        //TODO IMAGE
+        image: '/media/images/swisscheese.png',
         link: 'https://www.google.com',
         tags: ['Java', 'Game Dev', 'Algorithm'],
         github: 'https://github.com/alexkalinins/swisscheese'
@@ -51,11 +51,10 @@ export const thumbnails = [
         timeline: 'September 2021 - Ongoing',
         description: 'A personal portfolio website. The site was built using NextJS and\
         SCSS. The animations on the hero page (circles and sliding text) use CSS animations.',
-        image: 'https://picsum.photos/1920/1080',
+        image: '/media/images/portfolio.png',
         link: 'https://www.google.com',
         tags: ['React','NextJS', 'SCSS'],
         github: 'https://github.com/alexkalinins/portfolio',
-        //! TODO actual domain here
-        demo: 'localhost:3000'
+        demo: 'alexkalinins.com'
     }
 ];
