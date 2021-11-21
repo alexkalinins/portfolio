@@ -123,6 +123,8 @@ span {
     align-content: center;
 
     .pageContent {
+        min-height: 90vh;
+
         h1 {
             font-size: 4rem;
         }

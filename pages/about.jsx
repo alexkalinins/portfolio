@@ -22,9 +22,9 @@ export default function about() {
             software tools and libraries that I come across by making
             'mini-projects' to gain understanding that is deeper than a YouTube
             tutorial. Outside my academic and professional careers, I am
-            passionate about music, literature and photography.
+            passionate about music, literature, and photography.
           </p>
-          <SocialButtonRow/>
+          
         </div>
       </main>
       <Footer />

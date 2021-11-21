@@ -55,6 +55,6 @@ export const thumbnails = [
         link: 'https://www.google.com',
         tags: ['React','NextJS', 'SCSS'],
         github: 'https://github.com/alexkalinins/portfolio',
-        demo: 'alexkalinins.com'
+        demo: 'https://www.alexkalinins.com'
     }
 ];
