@@ -5,10 +5,12 @@ import NavBar from "../components/NavBar";
 import ProjectList from "../components/ProjectList";
 import ShiftingTextHero from "../components/ShiftingTextHero";
 import SocialButtonRow from '../components/SocialButtonRow';
+import Head from '../components/Head';
 
 export default function Home() {
   return (
     <div className="page">
+      <Head/>
       <main>
         <NavBar pageTitle="Portfolio `21" />
         <div className="frontPage">
@@ -25,8 +27,9 @@ export default function Home() {
 
               <p>
                 I like to explore my interests and develop my skills by making
-                cool projects. Recent projects and academic work, I focus on
-                computational cognition 🧠
+                cool projects. My favourite libraries are React.js and TensorFlow.
+                In recent academic work, I focus on topics in computational
+                cognition and consciousness.
               </p>
               <p>Looking for an internship position for Summer 2021.</p>
 
