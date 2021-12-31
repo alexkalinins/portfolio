@@ -1,11 +1,12 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import SocialButtonRow from '../components/SocialButtonRow';
+import Head from '../components/Head';
 
 export default function about() {
   return (
     <div className="page">
+      <Head pageTitle="About"/>
       <main>
         <NavBar pageTitle="About" />
         <div className="pageContent">

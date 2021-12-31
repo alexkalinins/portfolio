@@ -5,6 +5,17 @@
  */
 export const thumbnails = [
     {
+        title: 'SongNebula',
+        timeline: 'December 2021 - January 2022',
+        description: 'A web application for visually exploring music based on Spotify audio analysis data.\
+        A Gaussian Mixture Model was fitted to the songs in the database, allowing the user to listen \
+        to each cluster. The songs are plotted in three.js',
+        image: '/media/images/songnebula.png',
+        demo: 'https://songnebula.com/',
+        tags: ['Full-Stack', 'Three.js', 'Next.js'],
+        github: 'http://github.com/alexkalinins/song-nebula'
+    },
+    {
         title: 'TeaBlocks',
         timeline: 'December 2020 - Ongoing',
         description: 'An visual, in-browser, node-based programming language for teaching kids the basics \
@@ -47,7 +58,7 @@ export const thumbnails = [
         github: 'https://github.com/alexkalinins/swisscheese'
     },
     {
-        title: 'Portfolio \`21',
+        title: 'Portfolio \`22',
         timeline: 'September 2021 - Ongoing',
         description: 'A personal portfolio website. The site was built using NextJS and\
         SCSS. The animations on the hero page (circles and sliding text) use CSS animations.',
