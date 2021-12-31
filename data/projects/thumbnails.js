@@ -58,7 +58,7 @@ export const thumbnails = [
         github: 'https://github.com/alexkalinins/swisscheese'
     },
     {
-        title: 'Portfolio \`21',
+        title: 'Portfolio \`22',
         timeline: 'September 2021 - Ongoing',
         description: 'A personal portfolio website. The site was built using NextJS and\
         SCSS. The animations on the hero page (circles and sliding text) use CSS animations.',

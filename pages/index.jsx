@@ -12,7 +12,7 @@ export default function Home() {
     <div className="page">
       <Head/>
       <main>
-        <NavBar pageTitle="Portfolio `21" />
+        <NavBar pageTitle="Portfolio `22" />
         <div className="frontPage">
           <ShiftingTextHero />
 
