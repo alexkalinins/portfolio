@@ -49,7 +49,7 @@ export const thumbnails = [
     },
     {
         title: '\"Swiss Cheese\" Game',
-        timeline: 'November - December 2017',
+        timeline: 'November - December 2018',
         description: 'A maze exploration game written in Java using Randomized Depth-First Search algorithm\
         for procedural maze generation. The raycasting rendering engine was built from scratch.',
         image: '/media/images/swisscheese.png',
