@@ -21,17 +21,6 @@
         font-size: 1.75rem;
     }
 
-    img {
-        max-width: 40vw;
-        height: auto;
-
-        justify-self: start;
-
-        // @media only screen and (max-width: $medium) {
-        //     max-width: 100%;
-        // }
-    }
-
     h3 {
         font-size: 4rem;
         padding: 0;
@@ -50,53 +39,7 @@
 
     }
 
-    // @media only screen and (max-width: $medium) {
-    //     grid-template-rows: 1fr 1fr 3fr;
-    //     row-gap: 1rem;
-
-    //     .subTitleDiv{
-    //         grid-column: span 2;
-    //     }
-
-    //     .tagDiv{
-    //         grid-column: span 2;
-    //     }
-        
-    //     // &:nth-child(0){
-    //     //     grid-column: span 2;
-    //     // }        
-
-    // }
-
 }
-
-.NprojectThumbnail {
-    display: flex;
-    flex-direction: column;
-
-    border: 1px solid white;
-    border-radius: 1rem;
-
-    padding: 3rem;
-    margin-bottom: 2rem;
-    padding-top: 0rem;
-
-    //todo
-}
-
-.projThumbText {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-    // @media only screen and (min-width: $medium) {
-    //     max-width: 50%;
-    // }
-}
-
-
 
 .divHorizontal {
     display: flex;
@@ -104,7 +47,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .subTitleDiv {

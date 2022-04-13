@@ -12,7 +12,7 @@ export default function MenuDropdown() {
     >
       <span className="growLink">Menu</span>
       {showing && (
-        <div className="menuDropDown">
+        <div className="flex flex-col items-end absolute right-0 cursor-pointer">
           <Link href="/about">
             <span className="growLink">About</span>
           </Link>
@@ -20,10 +20,6 @@ export default function MenuDropdown() {
           <Link href="/projects">
             <span className="growLink">Projects</span>
           </Link>
-
-          {/* <Link href="/photography">
-            <span className="growLink">Photography</span>
-          </Link> */}
 
           <Link href="/contact">
             <span className="growLink">Contact</span>

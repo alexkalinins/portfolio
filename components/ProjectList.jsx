@@ -6,7 +6,7 @@ import ProjectThumbnail from "./ProjectThumbnail"
 
 export default function ProjectList() {
     return (
-        <div className="projectList">
+        <div className="z-100">
             {thumbnails.map(thumbnail => (
                 <ProjectThumbnail key={uuid()} data={thumbnail} />
             ))}

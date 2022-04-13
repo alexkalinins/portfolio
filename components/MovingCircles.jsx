@@ -53,7 +53,7 @@ const Circle = () => {
 
   return (
     <motion.div
-      className="circleContainer"
+      className="grid place-items-center w-60 h-60 pointer-events-none absolute"
       style={{
         translateX: xTransform,
         translateY: yTransform,
@@ -61,7 +61,7 @@ const Circle = () => {
         filter
       }}
     >
-      <div className="circle" style={{
+      <div className="absolute rounded-full mix-blend-color-dodge z-1 overflow-hidden" style={{
         width: size + "rem",
         height: size + "rem",
         backgroundColor: COLORS[Math.floor(Math.random() * COLORS.length)],
@@ -71,6 +71,7 @@ const Circle = () => {
 };
 
 export default function MovingCircles() {
+  //""min-w-1/2 min-h-full mr-[10vw] ml-[-10vw] mt-[5vh] grid place-items-center""
   return (
     <div className="movingCircles">
       <Circle />

@@ -13,7 +13,7 @@ export default function Home() {
       <Head/>
       <main>
         <NavBar pageTitle="Portfolio `22" />
-        <div className="frontPage">
+        <div className="min-h-screen">
           <ShiftingTextHero />
 
           <div className="sub">
