@@ -2,13 +2,11 @@
 @import "./shiftingText.scss";
 @import "./globals.scss";
 @import "./contactForm.scss";
-@import "./footer.scss";
-@import "./projectThumbnail.scss";
 
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.frontPage {
-  min-height: 100vh;
-}
 
 .hero {
   margin-top: -10vh;
@@ -68,32 +66,10 @@
   text-align: right;
 }
 
-.menuDropDown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-}
-
 .growLink:hover {
   color: red;
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.socialButtonRow {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  justify-content: space-evenly;
-  align-items: center;
-
-  align-content: center;
-  align-items: center;
 }
 
 .sub {
@@ -130,6 +106,3 @@
   }
 }
 
-.projectList {
-  z-index: 100;
-}

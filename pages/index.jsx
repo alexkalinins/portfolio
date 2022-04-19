@@ -10,10 +10,10 @@ import Head from '../components/Head';
 export default function Home() {
   return (
     <div className="page">
-      <Head/>
+      <Head />
       <main>
         <NavBar pageTitle="Portfolio `22" />
-        <div className="frontPage">
+        <div className="min-h-screen">
           <ShiftingTextHero />
 
           <div className="sub">
@@ -24,14 +24,15 @@ export default function Home() {
                 study Computer Science and Cognitive Science at the University
                 of Toronto.
               </p>
-
+              <p>
+                Full-Stack Internship @ DemandScience
+              </p>
               <p>
                 I like to explore my interests and develop my skills by making
                 cool projects. My favourite libraries are React.js and TensorFlow.
                 In recent academic work, I focus on topics in computational
                 cognition and consciousness.
               </p>
-              <p>Looking for an internship position for Summer 2021.</p>
 
               <SocialButtonRow />
             </div>

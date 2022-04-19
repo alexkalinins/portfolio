@@ -6,7 +6,7 @@ import ProjectThumbnail from "./ProjectThumbnail"
 
 export default function ProjectList() {
     return (
-        <div className="projectList">
+        <div className="z-10 flex flex-col items-start justify-center space-y-6">
             {thumbnails.map(thumbnail => (
                 <ProjectThumbnail key={uuid()} data={thumbnail} />
             ))}
