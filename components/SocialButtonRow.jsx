@@ -3,7 +3,7 @@ import SocialButton from './SocialButton'
 
 export default function SocialButtonRow() {
     return (
-    <div className="flex flex-row flex-nowrap justify-evenly items-center align-center ">
+    <div className="flex flex-row flex-nowrap justify-evenly items-center align-center justify-self-center space-x-6">
         <SocialButton url="https://github.com/alexkalinins" title="GitHub"/>
         <SocialButton url="https://www.linkedin.com/in/alex-kalinins/"title="LinkedIn"/>
         <SocialButton url="https://alexkalinins.medium.com"title="Medium"/>
